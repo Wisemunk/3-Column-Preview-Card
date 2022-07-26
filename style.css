@@ -1,0 +1,110 @@
+@font-face {
+    font-family: LexendDeca;
+    src: url("font/LexendDeca.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: BigSoulderDisp;
+    src: url("font/BigShouldersDisplay.ttf") format("truetype");
+}
+
+body {
+    font-family: LexendDeca, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(0, 0%, 95%);
+}
+
+main {
+    width: 60%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+    main {
+        display: grid;
+        height: 400px;
+        padding: 30px 30px;
+    }
+    .card_one p , .card_two p , .card_three p {
+        margin-bottom: 5px;
+    }
+
+    .card_one, .card_two, .card_three {
+        border-radius: 0;
+    }
+
+}
+
+.card_one, .card_two, .card_three {
+    padding: 40px
+}
+
+.card_one h2 , .card_two h2 , .card_three h2 {
+    letter-spacing: 3px;
+    font-size: 27px;
+    font-family: BigSoulderDisp, sans-serif;
+    color: hsl(0, 0%, 95%);
+}
+
+.card_one p , .card_two p , .card_three p {
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 100px;
+}
+
+.card_one {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card_two {
+    background:  hsl(184, 100%, 22%) ;
+}
+
+.card_three {
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main .btn {
+    width: 120px;
+    display: block;
+    padding: 10px 10px;
+    background: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+main .btn:hover {
+    background: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+}
+
+#btn_one {
+    color: hsl(31, 77%, 52%);
+}
+
+#btn_two {
+    color: hsl(184, 100%, 22%);
+}
+
+#btn_three {
+    color: hsl(179, 100%, 13%);
+}
+
+#btn_one:hover, #btn_two:hover, #btn_three:hover {
+    cursor: pointer;
+    color: white;
+}
